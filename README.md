@@ -35,38 +35,38 @@ The application will be accessible at http://localhost:8080.
 ## Endpoints
 
 1. Start a New Game
-URL: POST /game/start
+URL: /game/start
 
 Description: Initializes a new game session.
 
 Request:
-curl -X POST http://localhost:8080/game/start
+http://localhost:8080/game/start
 
 Response:
 Game started. Make your move!
 
 2. Make a Move
-URL: POST /game/move?playerMove={move}
+URL: /game/move?playerMove={move}
 
 Description: Submits the player's move (rock, paper, or scissors) and returns the result of the round against the computer.
 
 Request:
-curl -X POST "http://localhost:8080/game/move?playerMove=rock"
+"http://localhost:8080/game/move?playerMove=rock"
 or
-curl -X POST "http://localhost:8080/game/move?playerMove=paper"
+"http://localhost:8080/game/move?playerMove=paper"
 or
-curl -X POST "http://localhost:8080/game/move?playerMove=scissors"
+"http://localhost:8080/game/move?playerMove=scissors"
 
 Response:
 Player chose (playerMove), Computer chose (random choice). You lose! or "You win!" or "It's a tie!"
 
 3. Terminate the Game
-URL: POST /game/terminate
+URL: /game/terminate
 
 Description: Terminates the current game session.
 
 Request:
-curl -X POST http://localhost:8080/game/terminate
+http://localhost:8080/game/terminate
 
 Response:
 Game terminated.
