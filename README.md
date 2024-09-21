@@ -52,9 +52,13 @@ Description: Submits the player's move (rock, paper, or scissors) and returns th
 
 Request:
 curl -X POST "http://localhost:8080/game/move?playerMove=rock"
+or
+curl -X POST "http://localhost:8080/game/move?playerMove=paper"
+or
+curl -X POST "http://localhost:8080/game/move?playerMove=scissors"
 
 Response:
-Player chose rock, Computer chose paper. You lose!
+Player chose (playerMove), Computer chose (random choice). You lose! or "You win!" or "It's a tie!"
 
 3. Terminate the Game
 URL: POST /game/terminate
