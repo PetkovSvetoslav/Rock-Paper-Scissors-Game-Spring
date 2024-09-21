@@ -23,7 +23,6 @@ public class GameController {
         return ResponseEntity.ok("Game started. Make your move!");
     }
 
-//    @PostMapping("/move")
     @RequestMapping(value = "/move", method = {RequestMethod.GET, RequestMethod.POST})
     public ResponseEntity<String> makeMove(@RequestParam("playerMove") String playerMove) {
         try {
@@ -34,7 +33,6 @@ public class GameController {
         }
     }
 
-//    @PostMapping("/terminate")
 @RequestMapping(value = "/terminate", method = {RequestMethod.GET, RequestMethod.POST})
 public ResponseEntity<String> terminateGame() {
         gameService.terminateGame();
