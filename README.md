@@ -14,7 +14,7 @@ It allows a player to start a game, make moves, and terminate the game via API e
 - Java 17 or higher
 - Maven 3.6+
 - Spring Boot 3.x.x
-- Optional: Postman or Curl for testing the endpoints
+- Optional: Postman for testing the endpoints
 
 ## Getting Started
 
