@@ -20,8 +20,9 @@ It allows a player to start a game, make moves, and terminate the game via API e
 
 1. Clone the repository
 
-git clone https://github.com/PetkovSvetoslav/Rock-Paper-Scissors-Game-Spring.git
-cd Rock-Paper-Scissors-game
+git clone https://github.com/PetkovSvetoslav/Rock-Paper-Scissors-Game-Task-Spring-Solution.git
+
+cd Rock-Paper-Scissors-Game-Task-Spring-Solution
 
 2. Build the project
 mvn clean install
